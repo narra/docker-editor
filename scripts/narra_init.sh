@@ -9,7 +9,7 @@ else
     git clone https://github.com/narra/angular-editor.git /home/app/source/angular-editor
     # Check for tag
     if [ -n "$NARRA_EDITOR_VERSION" ]; then
-        git checkout tags/$NARRA_EDITOR_VERSION
+        git checkout tags/v$NARRA_EDITOR_VERSION
     fi
 fi
 
