@@ -2,7 +2,7 @@
 # Narra initialization
 rm -rf /home/app/source
 
-if [[ "$PASSENGER_APP_ENV" == "development" ]]; then
+if [[ "$NARRA_ENV" == "development" ]]; then
     mkdir -p /home/app/source/angular-editor/dist/editor && rsync -a /narra_source/angular-editor/dist/editor/ /home/app/source/angular-editor/dist/editor
 else
     mkdir /home/app/source
